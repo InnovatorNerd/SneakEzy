@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>SneakEzy Admin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/style.css">
+<style>
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px}
+.stat b{display:block;font:800 1.8rem var(--display);letter-spacing:-.03em}
+.stats4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:20px 0}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:.9rem}
+th{font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.mini{min-height:34px;padding:0 12px;font-size:.85rem}
+h2.sec{font:800 1.5rem var(--display);letter-spacing:-.02em;margin:34px 0 12px}
+.stockgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.stockgrid label{font-family:var(--mono)}
+.colors{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.colors input{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:2px}
+@media (max-width:640px){.stockgrid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap"><a class="logo" href="/">Sneak<b>Ezy</b> <span style="font:500 .8rem var(--mono);color:var(--muted)">admin</span></a><a class="iconbtn" href="/">View store</a><button class="iconbtn" id="out" hidden>Sign out</button></div></header>
+<main class="wrap" id="app"></main>
+<div class="toast" id="toast" role="status"></div>
+<script src="/admin.js"></script>
+</body>
+</html>

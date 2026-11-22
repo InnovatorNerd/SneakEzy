@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SneakEzy</title>
+<meta name="description" content="SneakEzy: running, basketball, trail and lifestyle sneakers with free shipping above ₹7,999.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#/">Sneak<b>Ezy</b></a>
+    <a class="iconbtn navlink" href="#/quiz" id="navQuiz">Find my pair</a>
+    <a class="iconbtn navlink" href="#/size-guide">Size guide</a>
+    <button class="iconbtn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+    <button class="iconbtn" id="savedBtn" aria-label="Saved pairs">♡<span class="count" id="savedCount"></span></button>
+    <a class="iconbtn" id="accountLink" href="#/account">Sign in</a>
+    <button class="iconbtn" id="cartBtn" aria-label="Open cart">Cart <span class="count" id="cartCount"></span></button>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<footer><div class="wrap">SneakEzy · Free shipping above ₹7,999 · 30-day returns · <a href="#/size-guide">Size guide</a> · <a href="/admin.html">Store admin</a><br>Photos from <a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash</a> (free to use): Solen Feyissa, Sven Ciupka, Goh Rhy Yan, Kimia Zarifi, Sporlab, Mnz, Joseph Barrientos, Suganth, Sahej Brar, Luis Felipe Lins.</div></footer>
+<div class="cmpbar" id="cmpBar" hidden><span>Compare <b id="cmpCount">0</b>/3</span><button class="btn mini" id="cmpGo" disabled>Compare now</button><button class="btn ghost mini" id="cmpClear">Clear</button></div>
+
+<div class="scrim" id="scrim"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Product details"></div>
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <header><h2>Your cart</h2><button class="iconbtn" id="closeCart">Close</button></header>
+  <div class="items" id="items"></div>
+  <div class="sum" id="sum"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>
